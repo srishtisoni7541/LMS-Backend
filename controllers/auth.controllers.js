@@ -1,11 +1,9 @@
+const crypto = require("crypto");
+
 const { sendEmail } = require("../config/nodemailer");
 const userModel = require("../models/user.model");
-const crypto = require("crypto");
 const ResponseHandler = require("../utils/responseHandler");
-const {
-  generateRefreshToken,
-  generateAccessToken,
-} = require("../utils/tokens");
+const { generateAccessToken, generateRefreshToken } = require("../utils/tokens");
 const { forgotPasswordTemplate } = require("../utils/emailTemplate");
 
 exports.register = async (req, res, next) => {

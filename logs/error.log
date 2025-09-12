@@ -65,3 +65,84 @@
     at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:276:14)
     at Function.handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:186:3)
     at router (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:60:12)
+2025-09-12 14:09:39 [[31MERROR[39M]: TypeError: Cannot destructure property 'Id' of 'req.params.Id' as it is undefined.
+    at exports.makeInstructor (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\instructor.controllers.js:6:13)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:53:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-12 15:27:42 [[31MERROR[39M]: TypeError: Cannot read properties of undefined (reading 'create')
+    at module.exports.createCourse (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\course.controllers.js:7:38)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:53:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-12 15:28:48 [[31MERROR[39M]: TypeError: Cannot read properties of undefined (reading 'create')
+    at module.exports.createCourse (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\course.controllers.js:9:38)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:53:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-12 15:29:39 [[31MERROR[39M]: ValidationError: Course validation failed: instructor: Path `instructor` is required.
+    at Document.invalidate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3358:32)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3119:17
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-12 15:37:30 [[31MERROR[39M]: SyntaxError: Expected double-quoted property name in JSON at position 338 (line 9 column 3)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-12 15:57:17 [[31MERROR[39M]: MulterError: Field name missing
+    at abortWithCode (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:85:22)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:113:37)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+2025-09-12 15:58:15 [[31MERROR[39M]: Error: Only mp4 videos and pdf files are allowed
+    at fileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\config\multer.js:10:8)
+    at wrappedFileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:132:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+2025-09-12 16:00:09 [[31MERROR[39M]:  Error in createLesson: cloudinary is not defined
+2025-09-12 16:00:09 [[31MERROR[39M]: ReferenceError: cloudinary is not defined
+    at module.exports.createLesson (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\lesson.controllers.js:24:26)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at done (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:59:7)
+    at indicateDone (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:63:68)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:187:7)
+    at Multipart.emit (node:events:518:28)
+    at emitCloseNT (node:internal/streams/destroy:148:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2025-09-12 16:02:20 [[31MERROR[39M]:  Error in createLesson: Must supply api_key
+2025-09-12 16:02:20 [[31MERROR[39M]: Error: Must supply api_key
+    at ensureOption (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\utils\ensureOption.js:19:13)
+    at Object.sign_request (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\utils\index.js:1151:16)
+    at Object.process_request_params (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\utils\index.js:1203:22)
+    at call_api (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\uploader.js:474:18)
+    at Object.upload (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\uploader.js:53:10)
+    at Object.upload_stream (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\uploader.js:40:18)
+    at Object.upload_stream (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\cloudinary\lib\utils\index.js:1400:21)
+    at module.exports.createLesson (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\lesson.controllers.js:26:46)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+2025-09-12 16:05:50 [[31MERROR[39M]: Cloudinary upload failed: Invalid cloud_name dkhavmwu
+2025-09-12 16:06:47 [[31MERROR[39M]: Cloudinary upload failed: Invalid cloud_name dkhavmwu

@@ -10,7 +10,7 @@ const quizSchema = new mongoose.Schema({
   title: { type: String, required: true },
   module: { type: mongoose.Schema.Types.ObjectId, ref: "Module", required: true },
   questions: [questionSchema],
-  timeLimit: Number // in minutes
+  timeLimit: Number 
 });
 
 export default mongoose.model("Quiz", quizSchema);
