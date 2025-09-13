@@ -1,16 +1,22 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const questionSchema = new mongoose.Schema({
   questionText: { type: String, required: true },
   options: [{ type: String, required: true }],
-  correctAnswer: { type: Number, required: true } // index of correct option
+  correctAnswer: { type: Number, required: true }, 
 });
 
 const quizSchema = new mongoose.Schema({
   title: { type: String, required: true },
-  module: { type: mongoose.Schema.Types.ObjectId, ref: "Module", required: true },
+  module: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Module",
+    required: true,
+  },
   questions: [questionSchema],
-  timeLimit: Number 
+  isDeleted: { type: Boolean, default: false },
+
+  timeLimit: Number,
 });
 
-export default mongoose.model("Quiz", quizSchema);
+module.exports = mongoose.model("Quiz", quizSchema);

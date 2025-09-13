@@ -40,6 +40,7 @@ app.use('/api/courses',require('./routes/course.routes'));
 app.use("/api/instructor", require("./routes/instructor.routes"));
 app.use("/api/module", require('./routes/module.routes'));
 app.use("/api/lesson", require("./routes/lesson.routes"));
+app.use('/api/quiz', require("./routes/quiz.routes"));
 // app.use("/api/admin", require("./routes/admin.routes"));
 // app.use("/api/student", require("./routes/student.routes"));
 // app.use("/api/payments", require("./routes/payment.routes"));
