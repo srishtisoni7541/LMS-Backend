@@ -22,7 +22,7 @@ exports.createPaymentOrder = async (req, res) => {
       amount,
       paymentMethod: "razorpay",
       paymentStatus: "pending",
-      transactionId: order.id, // Razorpay order id
+      transactionId: order.id, 
     });
 
     return ResponseHandler.success(res, { order, payment }, "Order created successfully");
@@ -35,7 +35,6 @@ exports.verifyPayment = async (req, res) => {
   try {
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
 
-    // Verify signature
     const generated_signature = crypto
       .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET)
       .update(razorpay_order_id + "|" + razorpay_payment_id)
@@ -64,9 +63,8 @@ exports.refundPayment = async (req, res) => {
 
     const payment = await Payment.findById(paymentId);
     if (!payment) return ResponseHandler.notFound(res, "Payment not found");
-
-    // Here you can also call Razorpay refund API if needed
-    // await razorpay.payments.refund(payment.transactionId);
+    if (payment.isRefunded) return ResponseHandler.badRequest(res, "Payment already refunded");
+    await razorpay.payments.refund(payment.transactionId); 
 
     payment.paymentStatus = "refunded";
     payment.isRefunded = true;

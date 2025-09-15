@@ -978,3 +978,88 @@
 2025-09-15 17:12:43 [[32MINFO[39M]: POST /api/auth/reset-password/2117748caf925f0820ee7e4cd74dbe9b59332dc24e98d1dddcfe766f227885bb - IP: ::1
 2025-09-15 17:13:03 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
 2025-09-15 17:13:32 [[32MINFO[39M]: POST /api/payments/create - IP: ::1
+2025-09-15 17:14:38 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:14:38 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:14:46 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:14:46 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:14:51 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:14:51 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:18:19 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:18:19 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:18:21 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:18:21 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:18:24 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:18:24 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:18:31 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:18:31 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:18:34 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:18:35 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:20:10 [[32MINFO[39M]: GET /api/payments/get-payments - IP: ::1
+2025-09-15 17:20:28 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:20:28 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:22:52 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:22:52 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:22:57 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:22:57 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:25:32 [[32MINFO[39M]: POST /api/enrollement/enroll - IP: ::1
+2025-09-15 17:26:11 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:26:32 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:26:32 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:26:33 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:27:24 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:27:25 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:27:57 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:27:57 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:28:02 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:28:02 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:28:11 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:28:11 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:28:14 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:29:53 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:29:53 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:30:05 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:30:06 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:30:13 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:30:13 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:22 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:22 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:31 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:31 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:36 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:36 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:37 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:37 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:39 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:39 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:43 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:43 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:48 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:48 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:52 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:31:52 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:31:55 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:33:02 [[32MINFO[39M]: PUT /api/enrollment/cancel/68c7ff56a85936ed240a7f13 - IP: ::1
+2025-09-15 17:33:41 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 17:34:27 [[32MINFO[39M]: PUT /api/enrollment/cancel/68c7ff56a85936ed240a7f13 - IP: ::1
+2025-09-15 17:34:55 [[32MINFO[39M]: PUT /api/enrollment/cancel/68c7ff56a85936ed240a7f13 - IP: ::1
+2025-09-15 17:35:30 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:36:55 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:36:55 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:10 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:37:10 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:14 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:37:14 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:17 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:37:17 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:20 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:37:20 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:22 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:37:22 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:26 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:37:38 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:37:38 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:37:40 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:37:52 [[32MINFO[39M]: PUT /api/enrollment/cancel/68c7ff56a85936ed240a7f13 - IP: ::1
+2025-09-15 17:40:20 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-15 17:41:19 [[32MINFO[39M]: PUT /api/enrollment/cancel/68c8022c62db3f858e5c036b - IP: ::1
+2025-09-15 17:41:33 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1

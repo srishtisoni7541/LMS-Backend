@@ -1,12 +1,19 @@
+const { redisClient } = require("../../config/redis");
 const enrollementModel = require("../../models/enrollement.model");
 const ResponseHandler = require("../../utils/responseHandler");
-const redisClient = require("../../utils/redisClient");
+const mongoose = require("mongoose");
+
 
 module.exports.createEnrollment = async (req, res) => {
   try {
     const { course, student } = req.body;
 
-    const exists = await enrollementModel.findOne({ course, student });
+    const exists = await enrollementModel.findOne({ 
+      course, 
+      student, 
+      status: { $ne: "cancelled" } 
+    });
+
     if (exists) {
       return ResponseHandler.badRequest(res, "Already enrolled in this course");
     }
@@ -16,11 +23,52 @@ module.exports.createEnrollment = async (req, res) => {
 
     await redisClient.del("enrollments");
 
-    ResponseHandler.created(res, "Enrollment created successfully", enrollment);
+    const detailedEnrollment = await enrollementModel.aggregate([
+      { $match: { _id: new mongoose.Types.ObjectId(enrollment._id) } },
+      {
+        $lookup: {
+          from: "users",
+          localField: "student",
+          foreignField: "_id",
+          as: "student",
+        },
+      },
+      { $unwind: "$student" },
+      {
+        $lookup: {
+          from: "courses",
+          localField: "course",
+          foreignField: "_id",
+          as: "course",
+        },
+      },
+      { $unwind: "$course" },
+      {
+        $project: {
+          _id: 1,
+          enrolledAt: 1,
+          status: 1,
+          cancelRequest: 1,
+          "student._id": 1,
+          "student.name": 1,
+          "student.email": 1,
+          "course._id": 1,
+          "course.title": 1,
+          "course.slug": 1,
+        },
+      },
+    ]);
+
+    return ResponseHandler.created(
+      res,
+      "Enrollment created successfully",
+      detailedEnrollment[0]
+    );
   } catch (error) {
-    ResponseHandler.serverError(res, error.message);
+    return ResponseHandler.serverError(res, error.message);
   }
 };
+
 
 module.exports.requestCancelEnrollment = async (req, res) => {
   try {
