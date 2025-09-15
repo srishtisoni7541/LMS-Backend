@@ -946,3 +946,35 @@
 2025-09-15 14:56:20 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
 2025-09-15 15:00:50 [[32MINFO[39M]: GET /api/certificate/student/68c2aec131c783462b882a35 - IP: ::1
 2025-09-15 15:06:05 [[32MINFO[39M]: GET /api/certificate/68c7d004788218f88fea1f6a - IP: ::1
+2025-09-15 15:49:18 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 15:49:18 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 16:25:28 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 16:25:28 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 16:27:11 [[32MINFO[39M]: POST /api/payments/create - IP: ::1
+2025-09-15 16:27:23 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 16:27:49 [[32MINFO[39M]: POST /api/payments/create - IP: ::1
+2025-09-15 17:04:48 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 17:04:57 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:04:57 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:05:22 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 17:05:29 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 17:07:13 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 17:08:15 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-15 17:08:15 [[31MERROR[39M]: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.
+    at exports.forgotPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:119:13)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:186:3)
+2025-09-15 17:08:35 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-15 17:08:35 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-15 17:09:36 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-15 17:11:49 [[32MINFO[39M]: POST /api/auth/reset-password/2117748caf925f0820ee7e4cd74dbe9b59332dc24e98d1dddcfe766f227885bb - IP: ::1
+2025-09-15 17:12:43 [[32MINFO[39M]: POST /api/auth/reset-password/2117748caf925f0820ee7e4cd74dbe9b59332dc24e98d1dddcfe766f227885bb - IP: ::1
+2025-09-15 17:13:03 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-15 17:13:32 [[32MINFO[39M]: POST /api/payments/create - IP: ::1

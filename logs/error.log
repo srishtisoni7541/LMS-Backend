@@ -168,3 +168,14 @@
 2025-09-15 14:03:10 [[31MERROR[39M]: TypeError: Cannot read properties of undefined (reading 'pipe')
     at exports.issueCertificate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\certificate.controllers.js:38:21)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-15 17:08:15 [[31MERROR[39M]: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.
+    at exports.forgotPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:119:13)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:291:5)
+    at Function.handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:186:3)

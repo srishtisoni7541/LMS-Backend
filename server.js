@@ -44,7 +44,7 @@ app.use('/api/quiz', require("./routes/quiz.routes"));
 app.use('/api/certificate', require("./routes/certificates.routes"));
 // app.use("/api/admin", require("./routes/admin.routes"));
 // app.use("/api/student", require("./routes/student.routes"));
-// app.use("/api/payments", require("./routes/payment.routes"));
+app.use("/api/payments", require("./routes/payment.routes"));
 
 app.use(notFound);
 app.use(errorHandler);
