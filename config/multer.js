@@ -1,18 +1,33 @@
+
+
+
+
 const multer = require("multer");
 
 const storage = multer.memoryStorage();
 
 const fileFilter = (req, file, cb) => {
-  const allowedTypes = ["video/mp4", "video/x-matroska", "application/pdf"];
+  const allowedTypes = [
+    "video/mp4",
+    "video/x-matroska",
+    "application/pdf",
+    "image/jpeg",
+    "image/png",
+    "image/jpg",
+  ];
+
   if (allowedTypes.includes(file.mimetype)) {
     cb(null, true);
   } else {
-    cb(new Error("Only mp4, mkv videos and pdf files are allowed"), false);
+    cb(new Error("Only mp4, mkv videos, pdf files and images (jpg, jpeg, png) are allowed"), false);
   }
 };
+
 const upload = multer({
   storage,
   fileFilter,
-  limits: { fileSize: 500 * 1024 * 1024 }, 
+  limits: { fileSize: 2 * 1024 * 1024 * 1024 }, 
 });
+
+
 module.exports = upload;

@@ -146,3 +146,25 @@
     at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
 2025-09-12 16:05:50 [[31MERROR[39M]: Cloudinary upload failed: Invalid cloud_name dkhavmwu
 2025-09-12 16:06:47 [[31MERROR[39M]: Cloudinary upload failed: Invalid cloud_name dkhavmwu
+2025-09-15 13:39:14 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-15 13:41:18 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-15 13:42:58 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-15 13:43:27 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-15 13:45:23 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-15 13:52:15 [[31MERROR[39M]: Cloudinary upload failed: getaddrinfo ENOTFOUND api.cloudinary.com
+2025-09-15 13:54:14 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-15 13:54:30 [[31MERROR[39M]: Cloudinary upload failed: getaddrinfo ENOTFOUND api.cloudinary.com
+2025-09-15 14:02:07 [[31MERROR[39M]: MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:132:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:572:12)
+2025-09-15 14:03:10 [[31MERROR[39M]: TypeError: Cannot read properties of undefined (reading 'pipe')
+    at exports.issueCertificate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\certificate.controllers.js:38:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

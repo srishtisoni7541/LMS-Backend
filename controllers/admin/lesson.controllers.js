@@ -3,6 +3,7 @@ const streamifier = require("streamifier");
 const logger = require("../../utils/logger");
 const ResponseHandler = require("../../utils/responseHandler");
 const cloudinary = require("../../config/cloudinary");
+const { default: moduleModel } = require("../../models/module.model");
 
 module.exports.createLesson = async (req, res, next) => {
   try {

@@ -10,16 +10,13 @@ module.exports.createQuiz = async (req, res) => {
   try {
     const { title, module, questions, timeLimit } = req.body;
 
-    // Module check
     const moduledb = await moduleModel.findById(module);
     if (!moduledb) {
       return ResponseHandler.notFound(res, "Module not found");
     }
 
-    // Quiz create
     const quiz = await QuizQuesModel.create({ title, module, questions, timeLimit });
 
-    // Cache update
     const quizzes = await QuizQuesModel.aggregate([
       {
         $lookup: {

@@ -316,3 +316,152 @@ Response:
     "duration": 300
   }
 }
+
+
+
+🔹 Quiz Routes (/api/quiz)
+1. Create Quiz
+
+Endpoint: POST /api/quiz/create-quiz
+
+Access: instructor only
+
+Body Example:
+
+{
+  "title": "JavaScript Basics Quiz",
+  "module": "64f123abc987def456789012",
+  "timeLimit": 20,
+  "questions": [
+    {
+      "questionText": "What is closure in JavaScript?",
+      "options": [
+        "A function inside another function",
+        "A variable declaration",
+        "A block scope",
+        "None of the above"
+      ],
+      "correctAnswer": "A function inside another function"
+    }
+  ]
+}
+
+
+Response (201):
+
+{
+  "success": true,
+  "message": "Quiz created successfully",
+  "data": { ...quizObject }
+}
+
+2. Get All Quizzes
+
+Endpoint: GET /api/quiz/get-all-quizzes
+
+Access: admin, instructor, student
+
+Response (200):
+
+{
+  "success": true,
+  "message": "Quizzes fetched successfully",
+  "data": [
+    {
+      "_id": "65012345abc123",
+      "title": "JS Basics",
+      "timeLimit": 20,
+      "module": {
+        "_id": "64f123abc987def456789012",
+        "name": "JavaScript"
+      },
+      "questions": [...],
+      "totalQuestions": 10
+    }
+  ]
+}
+
+3. Get Quiz by ID
+
+Endpoint: GET /api/quiz/:quizId
+
+Access: admin, instructor, student
+
+Response (200):
+
+{
+  "success": true,
+  "message": "Quiz fetched successfully",
+  "data": { ...quizObject }
+}
+
+4. Update Quiz
+
+Endpoint: PUT /api/quiz/:quizId
+
+Access: admin, instructor
+
+Body Example:
+
+{
+  "title": "Updated JS Quiz",
+  "timeLimit": 25
+}
+
+5. Delete Quiz (Soft Delete)
+
+Endpoint: DELETE /api/quiz/:quizId
+
+Access: instructor
+
+Response (200):
+
+{
+  "success": true,
+  "message": "Quiz deleted (soft delete) successfully",
+  "data": { ...quizObject }
+}
+
+🔹 Enrollment Routes (/api/enrollment)
+1. Create Enrollment
+
+Endpoint: POST /api/enrollment/enroll
+
+Access: student
+
+Body Example:
+
+{
+  "studentId": "64f1234567890abc12345678",
+  "courseId": "64f123abc987def456789012"
+}
+
+2. Get All Enrollments
+
+Endpoint: GET /api/enrollment/allenrollments
+
+Access: admin, instructor
+
+3. Get Enrollment by ID
+
+Endpoint: GET /api/enrollment/enrollment/:enrollmentId
+
+Access: admin, instructor, student
+
+4. Admin Cancel Enrollment
+
+Endpoint: PUT /api/enrollment/cancel/:enrollmentId
+
+Access: admin
+
+5. Student Request Cancel
+
+Endpoint: PUT /api/enrollment/request-cancel/:enrollmentId
+
+Access: student
+
+6. Admin Handle Refund
+
+Endpoint: POST /api/enrollment/refund/:enrollmentId
+
+Access: admin
