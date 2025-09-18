@@ -8,14 +8,15 @@ const { forgotPasswordTemplate } = require("../utils/emailTemplate");
 
 exports.register = async (req, res, next) => {
   try {
-    const { name, email, password, role } = req.body;
+    const { name, email, password } = req.body;
+    console.log(req.body);
 
     const existingUser = await userModel.findOne({ email });
     if (existingUser) {
       return ResponseHandler.badRequest(res, "User already exists");
     }
 
-    const user = await userModel.create({ name, email, password, role });
+    const user = await userModel.create({ name, email, password});
 
     return ResponseHandler.created(res, "User registered successfully", {
       user: {
@@ -46,10 +47,19 @@ exports.login = async (req, res, next) => {
     const accessToken = generateAccessToken(user);
     const refreshToken = generateRefreshToken(user);
 
+    // Save refresh token in DB (optional, for blacklist / revoke)
     user.refreshToken = refreshToken;
     await user.save();
-    console.log(user.refreshToken);
 
+    // Set refresh token as HttpOnly cookie
+    res.cookie("refreshToken", refreshToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production", // only https in prod
+      sameSite: "Strict",
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    });
+
+    // Send accessToken and user info in response
     return ResponseHandler.success(res, "Login successful", {
       user: {
         id: user._id,
@@ -57,14 +67,14 @@ exports.login = async (req, res, next) => {
         email: user.email,
         role: user.role,
       },
-      accessToken,
-      refreshToken,
+      accessToken, 
     });
   } catch (err) {
     console.log(err);
     next(err);
   }
 };
+
 
 exports.editProfile = async (req, res, next) => {
   try {
@@ -91,7 +101,7 @@ exports.editProfile = async (req, res, next) => {
 exports.logout = async (req, res, next) => {
   try {
     const userId = req.user.id;
-
+    console.log(userId);
     const user = await userModel.findById(userId);
     user.refreshToken = null;
     await user.save();
@@ -180,5 +190,21 @@ exports.getProfile = async (req, res, next) => {
     });
   } catch (err) {
     next(err);
+  }
+};
+
+
+module.exports.getAllUsers = async (req, res, next) => {
+  try {
+    const allUsers = await userModel.find({ role: "student" });
+
+    if (!allUsers || allUsers.length === 0) {
+      return ResponseHandler.notFound(res, "No students found, empty DB");
+    }
+
+    return ResponseHandler.success(res, "All students fetched successfully!", allUsers);
+  } catch (err) {
+    console.error(err);
+    return ResponseHandler.error(res, "Failed to fetch users");
   }
 };

@@ -1,5 +1,5 @@
 const express =require('express');
-const { register, login, logout, editProfile, deleteAccount, forgotPassword, resetPassword, getProfile } = require('../controllers/auth.controllers');
+const { register, login, logout, editProfile, deleteAccount, forgotPassword, resetPassword, getProfile, getAllUsers } = require('../controllers/auth.controllers');
 const authMiddleware = require('../middlewares/auth');
 const { registerSchema, loginSchema } = require('../validations/user.validations');
 const validate = require('../middlewares/validate');
@@ -14,4 +14,5 @@ router.put('/edit-profile',authMiddleware("student","admin","instructor"),editPr
 router.delete('/delete-account',authMiddleware("student","admin","instructor"),deleteAccount);
 router.post('/forgot-password',forgotPassword);
 router.post('/reset-password/:token',resetPassword);
+router.get('/all-users',authMiddleware('admin','instructor'),getAllUsers)
 module.exports=router;

@@ -10,6 +10,9 @@ const userSchema = new mongoose.Schema({
     enum: ["student", "instructor", "admin"],
     default: "student",
   },
+  courseId:{
+    type:mongoose.Schema.Types.ObjectId,  ref:"Course"
+  },
   refreshToken: { type: String },
   resetPasswordToken: { type: String },
   resetPasswordExpires: { type: Date },

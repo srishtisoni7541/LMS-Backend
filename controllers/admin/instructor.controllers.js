@@ -41,12 +41,30 @@ exports.removeInstructor = async (req, res, next) => {
   }
 };
 
-// Get All Instructors
+// Get All Instructors with courses
 exports.getAllInstructors = async (req, res, next) => {
   try {
-    const instructors = await userModel.find({ role: "instructor" }).select("-password");
-    return ResponseHandler.success(res, instructors, "Instructors fetched successfully");
+    const instructors = await userModel.aggregate([
+      { $match: { role: "instructor" } }, // only instructors
+      { 
+        $lookup: {
+          from: "courses",           
+          localField: "courses",     
+          foreignField: "_id",       
+          as: "enrolledCourses"      
+        }
+      },
+      {
+        $project: {
+          password: 0, 
+          refreshToken:0,              
+        }
+      }
+    ]);
+
+    return ResponseHandler.success(res, instructors, "Instructors with courses fetched successfully");
   } catch (err) {
     next(err);
   }
 };
+

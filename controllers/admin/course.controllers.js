@@ -2,13 +2,36 @@ const mongoose = require("mongoose");
 const { redisClient } = require("../../config/redis");
 const courseModel = require("../../models/course.model");
 const ResponseHandler = require("../../utils/responseHandler");
+const cloudinary = require('../../config/cloudinary');
 
 exports.createCourse = async (req, res, next) => {
   try {
-    const { title, slug, description, instructor, price, thumbnail, category, modules } = req.body;
-
+    const { title, slug, description, instructor, price, category, modules } = req.body;
     if (!instructor) return ResponseHandler.badRequest(res, "Instructor is required");
-    if (!mongoose.Types.ObjectId.isValid(instructor)) return ResponseHandler.badRequest(res, "Invalid instructor ID");
+    if (!mongoose.Types.ObjectId.isValid(instructor))
+      return ResponseHandler.badRequest(res, "Invalid instructor ID");
+
+    let thumbnailUrl = "";
+
+    if (req.file) {
+      // MemoryStorage file buffer se Cloudinary upload
+      const streamifier = require("streamifier");
+
+      const uploadFromBuffer = () =>
+        new Promise((resolve, reject) => {
+          const stream = cloudinary.uploader.upload_stream(
+            { folder: "courses" },
+            (error, result) => {
+              if (error) return reject(error);
+              resolve(result);
+            }
+          );
+          streamifier.createReadStream(req.file.buffer).pipe(stream);
+        });
+
+      const result = await uploadFromBuffer();
+      thumbnailUrl = result.secure_url;
+    }
 
     const course = await courseModel.create({
       title,
@@ -16,7 +39,7 @@ exports.createCourse = async (req, res, next) => {
       description,
       instructor,
       price,
-      thumbnail,
+      thumbnail: thumbnailUrl,
       category,
       modules: modules || [],
     });
@@ -29,6 +52,35 @@ exports.createCourse = async (req, res, next) => {
     next(err);
   }
 };
+
+
+
+// exports.createCourse = async (req, res, next) => {
+//   try {
+//     const { title, slug, description, instructor, price, thumbnail, category, modules } = req.body;
+
+//     if (!instructor) return ResponseHandler.badRequest(res, "Instructor is required");
+//     if (!mongoose.Types.ObjectId.isValid(instructor)) return ResponseHandler.badRequest(res, "Invalid instructor ID");
+
+//     const course = await courseModel.create({
+//       title,
+//       slug,
+//       description,
+//       instructor,
+//       price,
+//       thumbnail,
+//       category,
+//       modules: modules || [],
+//     });
+
+//     // Invalidate cache
+//     await redisClient.del("courses:all");
+
+//     return ResponseHandler.created(res, course, "Course created successfully");
+//   } catch (err) {
+//     next(err);
+//   }
+// };
 
 exports.getCourseById = async (req, res, next) => {
   try {

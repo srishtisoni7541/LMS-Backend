@@ -24,10 +24,10 @@ const seedAdmin = async () => {
 
     await admin.save();
 
-    console.log("✅ Admin user created successfully!");
+    console.log(" Admin user created successfully!");
     process.exit(0);
   } catch (error) {
-    console.error("❌ Error seeding admin:", error);
+    console.error(" Error seeding admin:", error);
     process.exit(1);
   }
 };
