@@ -9,6 +9,7 @@ const courseSchema = new mongoose.Schema({
   price: { type: Number, default: 0 },
   thumbnail: String,
   category: String,
+  isDeleted: { type: Boolean, default: false },
   createdAt: { type: Date, default: Date.now }
 });
 module.exports= mongoose.model("Course", courseSchema);

@@ -109,3 +109,85 @@ module.exports.softDeleteLesson = async (req, res, next) => {
     next(err);
   }
 };
+
+// Get all lessons using aggregation
+module.exports.getAllLessons = async (req, res, next) => {
+  try {
+    const lessons = await lessonModel.aggregate([
+      { $match: { isDeleted: { $ne: true } } }, // exclude deleted lessons
+      {
+        $lookup: {
+          from: "modules",          // collection name of modules
+          localField: "module",
+          foreignField: "_id",
+          as: "moduleInfo",
+        },
+      },
+      { $unwind: "$moduleInfo" }, // flatten module array
+      { $sort: { order: 1 } },   // sort by order
+      {
+        $project: {
+          title: 1,
+          type: 1,
+          contentUrl: 1,
+          duration: 1,
+          order: 1,
+          module: "$moduleInfo.title", // only module title
+        },
+      },
+    ]);
+
+    return ResponseHandler.success(
+      res,
+      "All lessons fetched successfully",
+      lessons
+    );
+  } catch (err) {
+    logger.error("Error in getAllLessons:", err);
+    next(err);
+  }
+};
+
+// Get lessons by module using aggregation
+module.exports.getLessonsByModule = async (req, res, next) => {
+  try {
+    const { moduleId } = req.params;
+
+    const lessons = await lessonModel.aggregate([
+      { $match: { module: require("mongoose").Types.ObjectId(moduleId), isDeleted: { $ne: true } } },
+      {
+        $lookup: {
+          from: "modules",
+          localField: "module",
+          foreignField: "_id",
+          as: "moduleInfo",
+        },
+      },
+      { $unwind: "$moduleInfo" },
+      { $sort: { order: 1 } },
+      {
+        $project: {
+          title: 1,
+          type: 1,
+          contentUrl: 1,
+          duration: 1,
+          order: 1,
+          module: "$moduleInfo.title",
+        },
+      },
+    ]);
+
+    if (!lessons || lessons.length === 0) {
+      return ResponseHandler.notFound(res, "No lessons found for this module");
+    }
+
+    return ResponseHandler.success(
+      res,
+      "Lessons fetched successfully",
+      lessons
+    );
+  } catch (err) {
+    logger.error("Error in getLessonsByModule:", err);
+    next(err);
+  }
+};

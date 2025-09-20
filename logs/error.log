@@ -219,3 +219,79 @@
     at async tryOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
     at async executeOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
     at async Collection.insertOne (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-19 03:09:52 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 03:10:21 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-19 03:11:33 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 03:12:03 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-19 03:12:45 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 03:13:15 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-19 03:14:26 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 12:55:21 [[31MERROR[39M]: Error: getaddrinfo ENOTFOUND api.cloudinary.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+2025-09-19 13:27:58 [[31MERROR[39M]: ValidationError: Module validation failed: course: Path `course` is required.
+    at Document.invalidate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3358:32)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3119:17
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-19 13:28:22 [[31MERROR[39M]: ValidationError: Module validation failed: course: Path `course` is required.
+    at Document.invalidate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3358:32)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3119:17
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-19 13:31:34 [[31MERROR[39M]: ValidationError: Module validation failed: course: Path `course` is required.
+    at Document.invalidate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3358:32)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\document.js:3119:17
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1416:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2025-09-19 13:33:58 [[31MERROR[39M]: ReferenceError: mongoose is not defined
+    at exports.addModule (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\module.controllers.js:12:5)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:54:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-19 13:34:44 [[31MERROR[39M]: ReferenceError: courseModel is not defined
+    at exports.addModule (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\module.controllers.js:26:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-19 13:42:10 [[31MERROR[39M]: Cloudinary upload failed: getaddrinfo ENOTFOUND api.cloudinary.com
+2025-09-19 13:43:35 [[31MERROR[39M]: Cloudinary upload failed: getaddrinfo ENOTFOUND api.cloudinary.com
+2025-09-19 14:24:18 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 14:26:04 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 14:26:51 [[31MERROR[39M]: Cloudinary upload failed: Server returned unexpected status code - 413
+2025-09-19 16:43:25 [[31MERROR[39M]: CastError: Cast to ObjectId failed for value "kavita soni" (type string) at path "instructor" because of "BSONError"
+    at SchemaObjectId.cast (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaType.applySetters (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1258:12)
+    at SchemaType.castForQuery (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1694:17)
+    at castUpdateVal (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:628:19)
+    at walkUpdatePath (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:433:24)
+    at castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+    at model.Query._castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4874:10)
+    at model.Query._findOneAndUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:3497:23)
+    at model.Query.exec (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-19 16:44:42 [[31MERROR[39M]: CastError: Cast to ObjectId failed for value "kavita soni" (type string) at path "instructor" because of "BSONError"
+    at SchemaObjectId.cast (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaType.applySetters (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1258:12)
+    at SchemaType.castForQuery (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1694:17)
+    at castUpdateVal (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:628:19)
+    at walkUpdatePath (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:433:24)
+    at castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+    at model.Query._castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4874:10)
+    at model.Query._findOneAndUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:3497:23)
+    at model.Query.exec (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-19 16:48:11 [[31MERROR[39M]: ReferenceError: User is not defined
+    at exports.updateCourse (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\course.controllers.js:207:30)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:54:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-20 01:24:00 [[31MERROR[39M]: MongoServerError: E11000 duplicate key error collection: LMS.courses index: slug_1 dup key: { slug: "java domination" }
+    at InsertOneOperation.execute (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-20 01:49:44 [[31MERROR[39M]: undefined
+2025-09-20 01:51:03 [[31MERROR[39M]: undefined
+2025-09-20 01:53:14 [[31MERROR[39M]: undefined
+2025-09-20 01:55:13 [[31MERROR[39M]: undefined

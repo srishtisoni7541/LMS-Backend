@@ -1,15 +1,37 @@
+const { default: mongoose } = require("mongoose");
 const { default: moduleModel } = require("../../models/module.model");
 const ResponseHandler = require("../../utils/responseHandler");
+const courseModel = require("../../models/course.model");
 
 exports.addModule = async (req, res, next) => {
   try {
-    const module = await moduleModel.create(req.body);
+    const { title, course, order } = req.body;
+
+    if (!course) {
+      return ResponseHandler.badRequest(res, "Course ID is required");
+    }
+
+    if (!mongoose.Types.ObjectId.isValid(course)) {
+      return ResponseHandler.badRequest(res, "Invalid course ID");
+    }
+
+    // 1️⃣ Create Module
+    const module = await moduleModel.create({
+      title,
+      order,
+      course: new mongoose.Types.ObjectId(course), 
+      lessons: []
+    });
+
+    await courseModel.findByIdAndUpdate(course, {
+      $push: { modules: module._id }
+    });
+
     return ResponseHandler.created(res, module, "Module created successfully");
   } catch (err) {
     next(err);
   }
 };
-
 exports.getModules = async (req, res, next) => {
   try {
     const modules = await moduleModel.aggregate([
