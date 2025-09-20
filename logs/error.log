@@ -295,3 +295,28 @@
 2025-09-20 01:51:03 [[31MERROR[39M]: undefined
 2025-09-20 01:53:14 [[31MERROR[39M]: undefined
 2025-09-20 01:55:13 [[31MERROR[39M]: undefined
+2025-09-20 13:07:59 [[31MERROR[39M]: ReferenceError: Course is not defined
+    at exports.updateModule (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\admin\module.controllers.js:92:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-20 15:30:38 [[31MERROR[39M]: Error: Only mp4, mkv videos, pdf files and images (jpg, jpeg, png) are allowed
+    at fileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\config\multer.js:22:8)
+    at wrappedFileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:132:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+2025-09-20 15:31:40 [[31MERROR[39M]: Error: Only mp4, mkv videos, pdf files and images (jpg, jpeg, png) are allowed
+    at fileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\config\multer.js:23:8)
+    at wrappedFileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:132:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
