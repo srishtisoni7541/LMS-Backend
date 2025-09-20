@@ -4,7 +4,7 @@ const { makeInstructor, getAllInstructors, removeInstructor } = require('../cont
 const router = express.Router();
 
 router.post('/make-instructor/:id',authMiddleware("admin"),makeInstructor);
-router.get('/all-instructors',authMiddleware("admin"),getAllInstructors);
+router.get('/all-instructors',authMiddleware("admin","instructor"),getAllInstructors);
 router.post('/remove-instructor/:userId',authMiddleware("admin"),removeInstructor);
 
 module.exports = router;

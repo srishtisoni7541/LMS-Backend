@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
-const { redisClient } = require("../../config/redis");
 const courseModel = require("../../models/course.model");
 const ResponseHandler = require("../../utils/responseHandler");
 const cloudinary = require('../../config/cloudinary');
 const userModel = require("../../models/user.model");
+const streamifier = require("streamifier");
 
+// ================= CREATE COURSE =================
 exports.createCourse = async (req, res, next) => {
   try {
     const { title, slug, description, instructor, price, category, modules } = req.body;
-    // console.log(req.body);
     if (!instructor) return ResponseHandler.badRequest(res, "Instructor is required");
     if (!mongoose.Types.ObjectId.isValid(instructor))
       return ResponseHandler.badRequest(res, "Invalid instructor ID");
@@ -16,9 +16,6 @@ exports.createCourse = async (req, res, next) => {
     let thumbnailUrl = "";
 
     if (req.file) {
-      // MemoryStorage file buffer se Cloudinary upload
-      const streamifier = require("streamifier");
-
       const uploadFromBuffer = () =>
         new Promise((resolve, reject) => {
           const stream = cloudinary.uploader.upload_stream(
@@ -46,29 +43,17 @@ exports.createCourse = async (req, res, next) => {
       modules: modules || [],
     });
 
-    // Invalidate cache
-    await redisClient.del("courses:all");
-
     return ResponseHandler.created(res, course, "Course created successfully");
   } catch (err) {
-    console.log(err);
     next(err);
   }
 };
-
-
 
 exports.getCourseById = async (req, res, next) => {
   try {
     const { id } = req.params;
     if (!mongoose.Types.ObjectId.isValid(id)) {
       return ResponseHandler.badRequest(res, "Invalid course ID");
-    }
-
-    // Check Redis Cache
-    const cached = await redisClient.get(`course:${id}`);
-    if (cached) {
-      return ResponseHandler.success(res, JSON.parse(cached), "Course from cache");
     }
 
     const course = await courseModel.aggregate([
@@ -105,7 +90,6 @@ exports.getCourseById = async (req, res, next) => {
         }
       },
 
-      // inject lessons into respective modules
       {
         $addFields: {
           modules: {
@@ -144,24 +128,14 @@ exports.getCourseById = async (req, res, next) => {
       return ResponseHandler.notFound(res, "Course not found");
     }
 
-    await redisClient.setEx(`course:${id}`, 3600, JSON.stringify(course[0]));
-
-    return ResponseHandler.success(
-      res,
-      course[0],
-      "Course fetched successfully with modules and lessons"
-    );
+    return ResponseHandler.success(res, course[0], "Course fetched successfully with modules and lessons");
   } catch (err) {
     next(err);
   }
 };
 
-
 exports.getCourses = async (req, res, next) => {
   try {
-    const cached = await redisClient.get("courses:all");
-    if (cached) return ResponseHandler.success(res, JSON.parse(cached), "Courses from cache");
-
     const courses = await courseModel.aggregate([
       {
         $lookup: {
@@ -189,7 +163,6 @@ exports.getCourses = async (req, res, next) => {
       },
     ]);
 
-    await redisClient.setEx("courses:all", 3600, JSON.stringify(courses)); // cache 1 hr
     return ResponseHandler.success(res, courses, "Courses fetched successfully");
   } catch (err) {
     next(err);
@@ -199,7 +172,6 @@ exports.getCourses = async (req, res, next) => {
 exports.updateCourse = async (req, res, next) => {
   try {
     const { id } = req.params;
-
     if (!mongoose.Types.ObjectId.isValid(id)) {
       return ResponseHandler.badRequest(res, "Invalid course ID");
     }
@@ -211,15 +183,11 @@ exports.updateCourse = async (req, res, next) => {
       if (!instructorUser) {
         return ResponseHandler.badRequest(res, "Instructor not found");
       }
-      updateData.instructor = instructorUser._id; // replace name with ObjectId
+      updateData.instructor = instructorUser._id;
     }
 
     const course = await courseModel.findByIdAndUpdate(id, updateData, { new: true });
     if (!course) return ResponseHandler.notFound(res, "Course not found");
-
-    // Clear cache
-    await redisClient.del("courses:all");
-    await redisClient.del(`course:${id}`);
 
     return ResponseHandler.success(res, course, "Course updated successfully");
   } catch (err) {
@@ -227,27 +195,17 @@ exports.updateCourse = async (req, res, next) => {
   }
 };
 
-
 exports.deleteCourse = async (req, res, next) => {
   try {
     const { id } = req.params;
     if (!mongoose.Types.ObjectId.isValid(id)) 
       return ResponseHandler.badRequest(res, "Invalid course ID");
 
-    const course = await courseModel.findByIdAndUpdate(
-      id,
-      { isDeleted: true },
-      { new: true }
-    );
-
+    const course = await courseModel.findByIdAndUpdate(id, { isDeleted: true }, { new: true });
     if (!course) return ResponseHandler.notFound(res, "Course not found");
-
-    await redisClient.del("courses:all");
-    await redisClient.del(`course:${id}`);
 
     return ResponseHandler.success(res, course, "Course soft deleted successfully");
   } catch (err) {
     next(err);
   }
 };
-

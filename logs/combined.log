@@ -2888,3 +2888,371 @@
 2025-09-20 16:54:37 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
 2025-09-20 16:54:45 [[32MINFO[39M]: ✅ Cloudinary configured successfully
 2025-09-20 16:54:46 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 16:59:05 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 16:59:05 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 17:09:14 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 17:09:39 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 17:09:44 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 17:09:45 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 17:09:50 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 17:09:50 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 17:11:56 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 17:29:43 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 17:29:43 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:01:18 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:01:18 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:02:37 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:02:37 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:03:07 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:03:08 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:05:47 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:05:47 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:07:23 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 18:07:27 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:07:30 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:07:38 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-20 18:07:39 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:07:41 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:07:45 [[32MINFO[39M]: DELETE /api/module/delete/[object%20Object] - IP: ::1
+2025-09-20 18:08:53 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:08:58 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:09:08 [[32MINFO[39M]: DELETE /api/module/delete/[object%20Object] - IP: ::1
+2025-09-20 18:09:26 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:09:31 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:09:36 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:09:41 [[32MINFO[39M]: DELETE /api/module/delete/68cd0f01394c2de00edf5ce4 - IP: ::1
+2025-09-20 18:09:54 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 18:09:57 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:10:16 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:10:38 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:10:39 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:10:48 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:10:48 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:10:55 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:10:56 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:11:01 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:11:02 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:11:06 [[32MINFO[39M]: PUT /api/module/delete/68cd0f01394c2de00edf5ce4 - IP: ::1
+2025-09-20 18:12:14 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:12:23 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 18:12:28 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:12:29 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:12:31 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:12:34 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:14:15 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:14:15 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:14:35 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:14:35 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:14:50 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:14:50 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:14:55 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:14:56 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:15:32 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:15:34 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:15:42 [[32MINFO[39M]: DELETE /api/lesson/delete/68ce649a832f255bce9e7e46 - IP: ::1
+2025-09-20 18:15:42 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:15:46 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:15:47 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:15:57 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:15:59 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:01 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:03 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:05 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:07 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:13 [[32MINFO[39M]: DELETE /api/lesson/delete/68ce649a832f255bce9e7e46 - IP: ::1
+2025-09-20 18:17:24 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:25 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:17:42 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:17:45 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:18:00 [[32MINFO[39M]: POST /api/module/create-module - IP: ::1
+2025-09-20 18:18:06 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:18:10 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:18:12 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:18:15 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:18:19 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:18:22 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:20:37 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:20:37 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:29:03 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:29:03 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:29:22 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:29:22 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:29:28 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:29:33 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 18:29:36 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-20 18:29:37 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 18:29:38 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:29:40 [[32MINFO[39M]: PUT /api/module/delete/68cea28095d98009b6c143ef - IP: ::1
+2025-09-20 18:29:59 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:30:15 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 18:30:18 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:30:20 [[32MINFO[39M]: GET /api/courses/get-course/68cd06ef24bf36c63d071d81 - IP: ::1
+2025-09-20 18:30:46 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:31:10 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 18:31:28 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 18:32:00 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:32:00 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:32:08 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:32:08 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:32:19 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:32:20 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:32:21 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:32:39 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 18:33:32 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:33:32 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:34:53 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:34:53 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:34:56 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:34:56 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:34:59 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:35:00 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:35:03 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:35:03 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:35:10 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:35:10 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:35:17 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:35:17 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:35:58 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:35:59 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:36:38 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:36:38 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:37:34 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:37:36 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 18:39:27 [[32MINFO[39M]: POST /api/courses/create-course - IP: ::1
+2025-09-20 18:39:36 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:39:39 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:39:45 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:39:47 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:40:03 [[32MINFO[39M]: POST /api/module/create-module - IP: ::1
+2025-09-20 18:40:08 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:40:10 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:40:23 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:40:51 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 18:41:02 [[32MINFO[39M]: Lesson created: 68cea7e631bc5f078a870f54 - What is Java?
+2025-09-20 18:41:09 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 18:41:12 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:41:15 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:41:28 [[32MINFO[39M]: DELETE /api/lesson/delete/68cea7e631bc5f078a870f54 - IP: ::1
+2025-09-20 18:41:42 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:41:48 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:41:51 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:41:51 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 18:41:59 [[32MINFO[39M]: PUT /api/module/update-module/68cea7ab31bc5f078a870f4a - IP: ::1
+2025-09-20 18:41:59 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:42:02 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:42:05 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:42:12 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:42:13 [[32MINFO[39M]: PUT /api/module/delete/68cea7ab31bc5f078a870f4a - IP: ::1
+2025-09-20 18:42:22 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:42:31 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 18:42:33 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:42:35 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:45:14 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:45:19 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:45:40 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:45:45 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:45:57 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:46:49 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:46:49 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:47:42 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:47:42 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:47:45 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:47:45 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:47:50 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:47:59 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:48:00 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:48:23 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:48:25 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:49:40 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:49:43 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:49:54 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:49:56 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:50:12 [[32MINFO[39M]: POST /api/module/create-module - IP: ::1
+2025-09-20 18:50:16 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:50:19 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:50:21 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:50:31 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:50:33 [[32MINFO[39M]: PUT /api/module/delete/68ceaa0c7de14911cc63b46a - IP: ::1
+2025-09-20 18:50:38 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:50:53 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 18:50:55 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:50:57 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:51:00 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:51:13 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:51:14 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:51:27 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 18:51:28 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:51:30 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:51:52 [[32MINFO[39M]: POST /api/module/create-module - IP: ::1
+2025-09-20 18:51:54 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:51:56 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:52:02 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:52:34 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 18:52:46 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 18:53:09 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 18:53:33 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 18:53:43 [[32MINFO[39M]: Lesson created: 68ceaadf7de14911cc63b498 - What is java?
+2025-09-20 18:53:50 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 18:53:52 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:55:19 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 18:56:54 [[32MINFO[39M]: DELETE /api/lesson/delete/68ceaadf7de14911cc63b498 - IP: ::1
+2025-09-20 18:57:49 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:57:50 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:57:56 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:57:56 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:58:08 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:58:08 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:58:56 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:58:56 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:59:10 [[32MINFO[39M]: DELETE /api/lesson/delete/68ceaadf7de14911cc63b498 - IP: ::1
+2025-09-20 18:59:34 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:59:34 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:59:39 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 18:59:39 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 18:59:49 [[32MINFO[39M]: DELETE /api/lesson/delete/68ceaadf7de14911cc63b498 - IP: ::1
+2025-09-20 18:59:59 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:25:18 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:25:35 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:25:40 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 23:25:43 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:25:53 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 23:26:01 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 23:26:05 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 23:26:08 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:27:06 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:27:09 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 23:27:11 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:27:41 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:28:01 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:28:16 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:28:59 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:29:41 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:30:21 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:30:45 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:31:06 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 23:31:07 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 23:31:08 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:31:35 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 23:31:36 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 23:31:48 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 23:31:48 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 23:31:48 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:32:12 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-20 23:40:21 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:41:48 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 23:41:49 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 23:41:54 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:42:23 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 23:42:26 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:42:34 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-20 23:42:36 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-20 23:42:41 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:42:59 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:43:28 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:43:58 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-20 23:45:37 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-20 23:45:41 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:45:46 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-20 23:45:51 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:50:50 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:52:23 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:52:26 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:52:41 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:53:35 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:53:45 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:53:47 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:15 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:20 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:21 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:28 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:36 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:45 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:54:51 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-20 23:55:21 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:55:55 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:56:12 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:56:21 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:56:32 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:56:54 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:56:57 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-20 23:57:25 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:57:30 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-20 23:57:33 [[32MINFO[39M]: GET /api/courses/get-course/68cea78b31bc5f078a870f3f - IP: ::1
+2025-09-20 23:57:38 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:57:41 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-20 23:57:53 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:58:21 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-20 23:58:50 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-20 23:59:16 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-20 23:59:17 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-20 23:59:17 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-20 23:59:52 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-21 00:00:42 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:00:42 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:00:51 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-21 00:01:26 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-21 00:05:23 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-21 00:14:10 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-21 00:31:52 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 00:34:33 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:34:33 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:39:32 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:39:32 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:42:15 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 00:48:32 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 00:49:07 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 00:49:40 [[31MERROR[39M]: Error: connect ENETUNREACH 64.233.170.108:587
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-09-21 00:49:54 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 00:52:04 [[32MINFO[39M]: POST /api/auth/reset-password/f9fe6325546d161d837f29566fd6a8ab5d07eacdb3bfa9287bb69a54b17545d3 - IP: ::1
+2025-09-21 00:52:04 [[31MERROR[39M]: TypeError: Cannot destructure property 'token' of 'req.body' as it is undefined.
+    at exports.resetPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:154:13)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
+2025-09-21 00:54:04 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:54:04 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:54:11 [[32MINFO[39M]: POST /api/auth/reset-password/f9fe6325546d161d837f29566fd6a8ab5d07eacdb3bfa9287bb69a54b17545d3 - IP: ::1
+2025-09-21 00:54:11 [[31MERROR[39M]: TypeError: Cannot destructure property 'newPassword' of 'req.body' as it is undefined.
+    at exports.resetPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:154:14)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
+2025-09-21 00:54:24 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:54:24 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:54:48 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:54:48 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:54:49 [[32MINFO[39M]: POST /api/auth/reset-password/f9fe6325546d161d837f29566fd6a8ab5d07eacdb3bfa9287bb69a54b17545d3 - IP: ::1
+2025-09-21 00:54:49 [[31MERROR[39M]: TypeError: Cannot destructure property 'newPassword' of 'req.body' as it is undefined.
+    at exports.resetPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:154:14)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
+2025-09-21 00:57:49 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:57:49 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 00:58:03 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 00:58:43 [[32MINFO[39M]: POST /api/auth/reset-password/5bd7bab1aa0ceeb2067e348217ceb4ae9733f09e71d654a159f324df44849b65 - IP: ::1
+2025-09-21 00:59:13 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-21 00:59:13 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-21 01:00:14 [[32MINFO[39M]: POST /api/auth/reset-password/5bd7bab1aa0ceeb2067e348217ceb4ae9733f09e71d654a159f324df44849b65 - IP: ::1
+2025-09-21 01:00:29 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-21 01:00:57 [[32MINFO[39M]: POST /api/auth/reset-password/c476979ecb6fe47849997733930992467f6378457c40de15d790ff813d506f65 - IP: ::1
+2025-09-21 01:01:19 [[32MINFO[39M]: POST /api/auth/login - IP: ::1

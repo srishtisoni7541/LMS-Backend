@@ -151,8 +151,10 @@ exports.forgotPassword = async (req, res, next) => {
 
 exports.resetPassword = async (req, res, next) => {
   try {
-    const { token, newPassword } = req.body;
+    const {  newPassword } = req.body;
+    const { token } = req.params; 
 
+    // console.log(req.body);
     const user = await userModel.findOne({
       resetPasswordToken: token,
       resetPasswordExpires: { $gt: Date.now() },

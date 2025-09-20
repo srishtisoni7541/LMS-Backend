@@ -320,3 +320,42 @@
     at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:248:10)
     at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
     at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+2025-09-20 23:32:12 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-20 23:43:58 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-20 23:45:37 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-21 00:01:26 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-21 00:49:40 [[31MERROR[39M]: Error: connect ENETUNREACH 64.233.170.108:587
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-09-21 00:52:04 [[31MERROR[39M]: TypeError: Cannot destructure property 'token' of 'req.body' as it is undefined.
+    at exports.resetPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:154:13)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
+2025-09-21 00:54:11 [[31MERROR[39M]: TypeError: Cannot destructure property 'newPassword' of 'req.body' as it is undefined.
+    at exports.resetPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:154:14)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
+2025-09-21 00:54:49 [[31MERROR[39M]: TypeError: Cannot destructure property 'newPassword' of 'req.body' as it is undefined.
+    at exports.resetPassword (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:154:14)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:295:15
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
+    at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
