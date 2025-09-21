@@ -1,6 +1,6 @@
 const express = require('express');
 const authMiddleware = require('../middlewares/auth');
-const { createEnrollment, getEnrollmentById, getEnrollments, adminCancelEnrollment, requestCancelEnrollment, adminHandleCancel,  } = require('../controllers/user/enrollement.controller');
+const {  getEnrollmentById, getEnrollments, adminCancelEnrollment, requestCancelEnrollment, adminHandleCancel, createEnrollment,  } = require('../controllers/user/enrollement.controller');
 const router = express.Router();
 
 

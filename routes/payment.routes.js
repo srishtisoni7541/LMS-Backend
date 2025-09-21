@@ -4,7 +4,7 @@ const {  createPaymentOrder, refundPayment, getPayments, verifyPayment } = requi
 const router = express.Router();
 
 router.post('/create',authMiddleware('student'),createPaymentOrder);
-router.put('/update/:paymentId',authMiddleware('admin'),verifyPayment);
+router.put('/verify/:paymentId',authMiddleware('admin','student'),verifyPayment);
 router.post('/refund/:paymentId',authMiddleware('admin'),refundPayment);
 router.get('/get-payments',authMiddleware('student','admin'),getPayments);
 

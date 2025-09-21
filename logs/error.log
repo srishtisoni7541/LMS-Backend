@@ -359,3 +359,23 @@
     at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:600:14)
     at param (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:610:14)
     at processParams (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\index.js:664:3)
+2025-09-21 15:22:01 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-21 15:23:18 [[31MERROR[39M]: Cloudinary upload failed: Request Timeout
+2025-09-21 15:27:23 [[31MERROR[39M]: Cloudinary upload failed: write ECONNRESET
+2025-09-21 15:44:57 [[31MERROR[39M]: Error in createLesson: cloudinary is not defined
+2025-09-21 15:45:46 [[31MERROR[39M]: Error in createLesson: Cannot read properties of undefined (reading 'upload_stream')
+2025-09-21 15:49:01 [[31MERROR[39M]: Error in createLesson: cloudinary is not defined
+2025-09-21 15:50:08 [[31MERROR[39M]: Error in createLesson: streamifier is not defined
+2025-09-21 16:03:14 [[31MERROR[39M]: Error in createLesson: Request Timeout
+2025-09-21 17:31:05 [[31MERROR[39M]: Error in createLesson: Request Timeout
+2025-09-21 17:37:01 [[31MERROR[39M]: Error in createLesson: Request Timeout
+2025-09-22 00:52:00 [[31MERROR[39M]: ReferenceError: ResponseHandler is not defined
+    at module.exports.createEnrollment (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\user\enrollement.controller.js:73:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 00:53:39 [[31MERROR[39M]: ReferenceError: ResponseHandler is not defined
+    at module.exports.createEnrollment (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\user\enrollement.controller.js:74:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 00:54:59 [[31MERROR[39M]: ReferenceError: ResponseHandler is not defined
+    at module.exports.createEnrollment (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\user\enrollement.controller.js:75:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 01:49:36 [[31MERROR[39M]: Error in createLesson: Request Timeout

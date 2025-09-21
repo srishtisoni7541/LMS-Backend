@@ -6,6 +6,7 @@ const crypto = require("crypto");
 exports.createPaymentOrder = async (req, res) => {
   try {
     const { student, course, amount, currency = "INR" } = req.body;
+    // console.log(req.body);
 
     const options = {
       amount: amount * 100, 
@@ -34,6 +35,7 @@ exports.createPaymentOrder = async (req, res) => {
 exports.verifyPayment = async (req, res) => {
   try {
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
+    // console.log(req.body);
 
     const generated_signature = crypto
       .createHmac("sha256", process.env.RAZORPAY_KEY_SECRET)
@@ -53,6 +55,7 @@ exports.verifyPayment = async (req, res) => {
 
     return ResponseHandler.success(res, payment, "Payment verified successfully");
   } catch (err) {
+    console.log(err);
     return ResponseHandler.serverError(res, err.message);
   }
 };

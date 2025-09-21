@@ -79,13 +79,17 @@ exports.login = async (req, res, next) => {
 exports.editProfile = async (req, res, next) => {
   try {
     const { name, email } = req.body;
+    // console.log(req.body);
     const userId = req.user.id;
+    // console.log(userId);
+
 
     const user = await userModel.findByIdAndUpdate(
       userId,
       { name, email },
       { new: true }
     );
+    // console.log(user);
 
     return ResponseHandler.success(res, "Profile updated", {
       id: user._id,
@@ -94,6 +98,7 @@ exports.editProfile = async (req, res, next) => {
       role: user.role,
     });
   } catch (err) {
+    console.log(err);
     next(err);
   }
 };
@@ -184,11 +189,12 @@ exports.getProfile = async (req, res, next) => {
       return ResponseHandler.notFound(res, "User not found");
     }
 
-    return ResponseHandler.success(res, "User profile retrieved", {
+      return ResponseHandler.success(res, "User profile retrieved", {
       id: user._id,
       name: user.name,
       email: user.email,
       role: user.role,
+      enrolledCourses: user.enrolledCourses || [], 
     });
   } catch (err) {
     next(err);
