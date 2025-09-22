@@ -9,6 +9,7 @@ const streamifier = require("streamifier");
 exports.createCourse = async (req, res, next) => {
   try {
     const { title, slug, description, instructor, price, category, modules } = req.body;
+    // console.log(req.file);
     if (!instructor) return ResponseHandler.badRequest(res, "Instructor is required");
     if (!mongoose.Types.ObjectId.isValid(instructor))
       return ResponseHandler.badRequest(res, "Invalid instructor ID");

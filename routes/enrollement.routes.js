@@ -1,6 +1,6 @@
 const express = require('express');
 const authMiddleware = require('../middlewares/auth');
-const {  getEnrollmentById, getEnrollments, adminCancelEnrollment, requestCancelEnrollment, adminHandleCancel, createEnrollment,  } = require('../controllers/user/enrollement.controller');
+const {  getEnrollmentById, getEnrollments, adminCancelEnrollment, requestCancelEnrollment, adminHandleCancel, createEnrollment, getCancelRequests,  } = require('../controllers/user/enrollement.controller');
 const router = express.Router();
 
 
@@ -10,6 +10,8 @@ router.get('/enrollment/:enrollmentId',authMiddleware(["admin","instructor","stu
 router.put('/cancel/:enrollmentId',authMiddleware("admin"),adminCancelEnrollment);
 router.put('/request-cancel/:enrollmentId',authMiddleware("student"),requestCancelEnrollment);
 router.post('/refund/:enrollmentId',authMiddleware("admin"),adminHandleCancel);
+router.get('/get-cancel-requests',authMiddleware('admin','instructor'),getCancelRequests);
+
 
 
 module.exports=router;

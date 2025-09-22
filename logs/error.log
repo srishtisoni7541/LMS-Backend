@@ -393,3 +393,31 @@
     at model.Query._findOneAndUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:3497:23)
     at model.Query.exec (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4627:80)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 12:26:33 [[31MERROR[39M]: Error: getaddrinfo ENOTFOUND api.cloudinary.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+2025-09-22 12:40:06 [[31MERROR[39M]: Error: getaddrinfo ENOTFOUND api.cloudinary.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+2025-09-22 15:26:52 [[31MERROR[39M]: ReferenceError: mongoose is not defined
+    at exports.getProfile (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:186:20)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:54:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 15:28:31 [[31MERROR[39M]: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+    at exports.getProfile (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:187:35)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:54:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 15:31:26 [[31MERROR[39M]: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+    at exports.getProfile (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\auth.controllers.js:187:35)
+    at Layer.handleRequest (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\router\lib\route.js:157:13)
+    at C:\Users\ASUS\OneDrive\Desktop\LMS\backend\middlewares\auth.js:54:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-22 17:15:40 [[31MERROR[39M]: MongoServerError: E11000 duplicate key error collection: LMS.courses index: slug_1 dup key: { slug: "abc" }
+    at InsertOneOperation.execute (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\collection.js:157:16)

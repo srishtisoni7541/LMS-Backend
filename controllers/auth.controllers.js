@@ -5,6 +5,7 @@ const userModel = require("../models/user.model");
 const ResponseHandler = require("../utils/responseHandler");
 const { generateAccessToken, generateRefreshToken } = require("../utils/tokens");
 const { forgotPasswordTemplate } = require("../utils/emailTemplate");
+const { default: mongoose } = require("mongoose");
 
 exports.register = async (req, res, next) => {
   try {
@@ -180,27 +181,77 @@ exports.resetPassword = async (req, res, next) => {
   }
 };
 
+
 exports.getProfile = async (req, res, next) => {
   try {
-    const userId = req.user.id;
+    const userId = new mongoose.Types.ObjectId(req.user.id);
 
-    const user = await userModel.findById(userId);
-    if (!user) {
+    const userWithEnrollments = await userModel.aggregate([
+      // match the user
+      { $match: { _id: userId } },
+
+      // lookup enrollments
+      {
+        $lookup: {
+          from: "enrollments", // collection name in DB
+          localField: "enrolledCourses",
+          foreignField: "_id",
+          as: "enrollments",
+        },
+      },
+
+      // lookup courses inside enrollments
+      {
+        $lookup: {
+          from: "courses", // collection name in DB
+          localField: "enrollments.course",
+          foreignField: "_id",
+          as: "courses",
+        },
+      },
+
+      // project fields
+      {
+        $project: {
+          _id: 1,
+          name: 1,
+          email: 1,
+          role: 1,
+          enrolledCourses: {
+            $map: {
+              input: "$enrollments",
+              as: "enroll",
+              in: {
+                enrollmentId: "$$enroll._id",
+                status: "$$enroll.status",
+                course: {
+                  $arrayElemAt: [
+                    {
+                      $filter: {
+                        input: "$courses",
+                        as: "c",
+                        cond: { $eq: ["$$c._id", "$$enroll.course"] },
+                      },
+                    },
+                    0,
+                  ],
+                },
+              },
+            },
+          },
+        },
+      },
+    ]);
+
+    if (!userWithEnrollments || userWithEnrollments.length === 0) {
       return ResponseHandler.notFound(res, "User not found");
     }
 
-      return ResponseHandler.success(res, "User profile retrieved", {
-      id: user._id,
-      name: user.name,
-      email: user.email,
-      role: user.role,
-      enrolledCourses: user.enrolledCourses || [], 
-    });
+    return ResponseHandler.success(res, "User profile retrieved", userWithEnrollments[0]);
   } catch (err) {
     next(err);
   }
 };
-
 
 module.exports.getAllUsers = async (req, res, next) => {
   try {

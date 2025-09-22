@@ -20,6 +20,7 @@ const userSchema = new mongoose.Schema({
     { type: mongoose.Schema.Types.ObjectId, ref: "Enrollment" },
   ],
   createdAt: { type: Date, default: Date.now },
+  enrolledAt:{type:Date,default:Date.now},
 });
 
 userSchema.pre("save", async function (next) {

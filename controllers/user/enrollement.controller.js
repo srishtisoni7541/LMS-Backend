@@ -8,7 +8,7 @@ const ResponseHandler = require("../../utils/responseHandler");
 module.exports.createEnrollment = async (req, res) => {
   try {
     const { course, student } = req.body;
-    // console.log(req.body);
+    console.log(req.body);
 
     const exists = await enrollementModel.findOne({ 
       course, 
@@ -24,7 +24,7 @@ module.exports.createEnrollment = async (req, res) => {
     await enrollment.save();
 
     await userModel.findByIdAndUpdate(student, {
-      $push: { enrolledCourses: course}
+      $push: { enrolledCourses: enrollment._id},
     });
 
     await redisClient.del("enrollments");
@@ -197,16 +197,19 @@ module.exports.adminCancelEnrollment = async (req, res) => {
 module.exports.requestCancelEnrollment = async (req, res) => {
   try {
     const { enrollmentId } = req.params;
-    const enrollment = await enrollmentModel.findByIdAndUpdate(
+    // console.log(enrollmentId);
+    const enrollment = await enrollementModel.findByIdAndUpdate(
       enrollmentId,
       { cancelRequest: true },
       { new: true }
     );
 
+
     if (!enrollment) return ResponseHandler.notFound(res, "Enrollment not found");
 
     return ResponseHandler.success(res, "Cancellation request sent", enrollment);
   } catch (error) {
+    console.log(error);
     return ResponseHandler.serverError(res, error.message);
   }
 };
@@ -215,7 +218,7 @@ module.exports.requestCancelEnrollment = async (req, res) => {
 module.exports.adminHandleCancel = async (req, res) => {
   try {
     const { enrollmentId } = req.params;
-    const enrollment = await enrollmentModel.findById(enrollmentId);
+    const enrollment = await enrollementModel.findById(enrollmentId);
 
     if (!enrollment) return ResponseHandler.notFound(res, "Enrollment not found");
 
@@ -225,6 +228,67 @@ module.exports.adminHandleCancel = async (req, res) => {
 
     return ResponseHandler.success(res, "Refund/Cancel handled successfully", enrollment);
   } catch (error) {
+    return ResponseHandler.serverError(res, error.message);
+  }
+};
+
+
+
+// 7️⃣ Get all enrollments with cancelRequest = true
+module.exports.getCancelRequests = async (req, res) => {
+  try {
+    const cancelRequests = await enrollementModel.aggregate([
+      // Sirf cancelRequest true wale enrollments
+      { $match: { cancelRequest: true } },
+
+      // User details populate
+      {
+        $lookup: {
+          from: "users",
+          localField: "student",
+          foreignField: "_id",
+          as: "student",
+        },
+      },
+      { $unwind: "$student" },
+
+      // Course details populate
+      {
+        $lookup: {
+          from: "courses",
+          localField: "course",
+          foreignField: "_id",
+          as: "course",
+        },
+      },
+      { $unwind: "$course" },
+
+      // Chahiye fields select karo
+      {
+        $project: {
+          _id: 1,
+          enrolledAt: 1,
+          status: 1,
+          cancelRequest: 1,
+          "student._id": 1,
+          "student.name": 1,
+          "student.email": 1,
+          "student.role": 1,
+          "course._id": 1,
+          "course.title": 1,
+          "course.slug": 1,
+          "course.price": 1,
+        },
+      },
+    ]);
+
+    return ResponseHandler.success(
+      res,
+      "Cancel requests fetched successfully",
+      cancelRequests
+    );
+  } catch (error) {
+    console.log(error);
     return ResponseHandler.serverError(res, error.message);
   }
 };
