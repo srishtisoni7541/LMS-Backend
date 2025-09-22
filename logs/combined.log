@@ -4745,3 +4745,5 @@
 2025-09-22 17:15:56 [[32MINFO[39M]: DELETE /api/courses/delete-course/68d136e1e081ff0161239e1e - IP: ::1
 2025-09-22 17:16:21 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
 2025-09-22 17:16:22 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-22 18:54:08 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-22 18:54:09 [[32MINFO[39M]: ✅ Server is running on port 3000
