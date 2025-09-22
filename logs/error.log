@@ -379,3 +379,17 @@
     at module.exports.createEnrollment (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\controllers\user\enrollement.controller.js:75:5)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2025-09-22 01:49:36 [[31MERROR[39M]: Error in createLesson: Request Timeout
+2025-09-22 04:36:13 [[31MERROR[39M]: Error in createLesson: Request Timeout
+2025-09-22 04:36:36 [[31MERROR[39M]: Error in createLesson: read ECONNRESET
+2025-09-22 04:39:01 [[31MERROR[39M]: Error in createLesson: Request Timeout
+2025-09-22 06:30:49 [[31MERROR[39M]: CastError: Cast to ObjectId failed for value "" (type string) at path "course" because of "BSONError"
+    at SchemaObjectId.cast (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaType.applySetters (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1258:12)
+    at SchemaType.castForQuery (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1694:17)
+    at castUpdateVal (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:628:19)
+    at walkUpdatePath (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:433:24)
+    at castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+    at model.Query._castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4874:10)
+    at model.Query._findOneAndUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:3497:23)
+    at model.Query.exec (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

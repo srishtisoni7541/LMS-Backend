@@ -85,12 +85,10 @@ exports.getModuleById = async (req, res, next) => {
   }
 };
 
-// ================= UPDATE MODULE =================
 exports.updateModule = async (req, res, next) => {
   try {
     const moduleId = req.params.id;
     const { course: newCourseId, title, order } = req.body;
-
     const oldModule = await moduleModel.findById(moduleId);
     if (!oldModule) return ResponseHandler.notFound(res, "Module not found");
 

@@ -1,14 +1,12 @@
 const express = require('express');
 const authMiddleware = require('../middlewares/auth');
 const { issueCertificate, getCertificates, getCertificatesByStudent, getCertificateById, deleteCertificate } = require('../controllers/certificate.controllers');
-const upload = require('../config/multer');
 
 const router = express.Router();
 
 router.post(
   "/issue",
-  authMiddleware("admin"),
-  upload.single("certificate"), 
+  authMiddleware("admin"), 
  issueCertificate
 );
 router.get('/get-all-certificates',authMiddleware('instructor','admin'),getCertificates);

@@ -7,36 +7,34 @@ const streamifier = require("streamifier");
 module.exports.issueCertificate = async (req, res, next) => {
   try {
     const { student, course } = req.body;
+    console.log(req.body);
 
-    if (!req.file) {
-      return ResponseHandler.badRequest(res, "Certificate image is required");
+    if (!student || !course) {
+      return ResponseHandler.badRequest(res, "Student name and course are required");
     }
 
-    const streamUpload = (req) => {
-      return new Promise((resolve, reject) => {
-        const stream = cloudinary.uploader.upload_stream(
-          {
-            resource_type: "image",
-            folder: "certificates",
-          },
-          (error, result) => {
-            if (result) {
-              resolve(result);
-            } else {
-              reject(error);
-            }
-          }
-        );
-        streamifier.createReadStream(req.file.buffer).pipe(stream);
-      });
-    };
+    // Certificate content
+    const certificateContent = `
+      🦁 Sheryians Coding School Institute 
 
-    const uploadResult = await streamUpload(req);
+      This is to certify that
 
+      ${student}
+
+      has successfully completed the course
+
+      "${course}"
+
+      We acknowledge their dedication and hard work.
+
+      Date of Issue: ${new Date().toLocaleDateString()}
+    `;
+
+    // Agar tum database me store karna chahte ho
     const certificate = await certificateModel.create({
       student,
       course,
-      certificateUrl: uploadResult.secure_url,
+      certificateContent, 
     });
 
     return ResponseHandler.created(
@@ -45,9 +43,11 @@ module.exports.issueCertificate = async (req, res, next) => {
       certificate
     );
   } catch (err) {
+    console.log(err);
     next(err);
   }
 };
+
 module.exports.getCertificates = async (req, res) => {
   try {
     const certificates = await certificateModel.find()

@@ -204,7 +204,33 @@ exports.getProfile = async (req, res, next) => {
 
 module.exports.getAllUsers = async (req, res, next) => {
   try {
-    const allUsers = await userModel.find({ role: "student" });
+    const allUsers = await userModel.aggregate([
+      // Only fetch students
+      { $match: { role: "student" } },
+      
+      // Exclude sensitive fields
+      { $project: { password: 0, refreshToken: 0, resetPasswordToken: 0 } },
+
+      // Lookup enrolled courses details
+      {
+        $lookup: {
+          from: "courses", // collection name in MongoDB
+          localField: "enrolledCourses", // field in user
+          foreignField: "_id", // field in courses
+          as: "enrolledCoursesDetails",
+        },
+      },
+
+      // Optionally: select only relevant course fields
+      {
+        $project: {
+          name: 1,
+          email: 1,
+          role: 1,
+          enrolledCoursesDetails: { title: 1, _id: 1 },
+        },
+      },
+    ]);
 
     if (!allUsers || allUsers.length === 0) {
       return ResponseHandler.notFound(res, "No students found, empty DB");
