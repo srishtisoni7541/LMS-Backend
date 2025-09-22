@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
 app.use(helmet());
 app.use(cors({ 
-  origin: ["http://localhost:5173","http://localhost:5174",process.env.FRONTEND_ADMIN_URL],  
+  origin: ["http://localhost:5173","http://localhost:5174",process.env.FRONTEND_ADMIN_URL,process.env.FRONTEND_STUDENT_URL],  
   credentials: true,                
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
