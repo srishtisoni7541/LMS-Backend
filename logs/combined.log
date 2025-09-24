@@ -4920,3 +4920,62 @@
 2025-09-24 16:10:57 [[32MINFO[39M]: GET /api/auth/profile - IP: ::1
 2025-09-24 16:10:57 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
 2025-09-24 16:10:57 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:12:40 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-24 19:12:46 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-24 19:18:59 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 19:21:12 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:21:17 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 19:21:21 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 19:21:30 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:22:38 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 19:22:41 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 19:25:40 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 19:25:51 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:25:53 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 19:25:55 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 19:26:04 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 19:26:18 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 19:27:12 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 19:27:17 [[32MINFO[39M]: GET /api/enrollment/get-cancel-requests - IP: ::1
+2025-09-24 19:27:34 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 19:27:52 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:27:52 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 19:27:58 [[32MINFO[39M]: PUT /api/module/update-module/68d3c747ff12dec063630aac - IP: ::1
+2025-09-24 19:27:58 [[31MERROR[39M]: CastError: Cast to ObjectId failed for value "" (type string) at path "course" because of "BSONError"
+    at SchemaObjectId.cast (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schema\objectId.js:251:11)
+    at SchemaType.applySetters (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1258:12)
+    at SchemaType.castForQuery (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\schemaType.js:1694:17)
+    at castUpdateVal (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:628:19)
+    at walkUpdatePath (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:433:24)
+    at castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\helpers\query\castUpdate.js:144:7)
+    at model.Query._castUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4874:10)
+    at model.Query._findOneAndUpdate (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:3497:23)
+    at model.Query.exec (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongoose\lib\query.js:4627:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-24 19:29:28 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-24 19:29:29 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-24 19:29:29 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:29:31 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 19:29:39 [[32MINFO[39M]: PUT /api/module/update-module/68d3c747ff12dec063630aac - IP: ::1
+2025-09-24 19:29:52 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:29:53 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 19:30:00 [[32MINFO[39M]: GET /api/enrollment/get-cancel-requests - IP: ::1
+2025-09-24 19:30:04 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 19:30:08 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 19:30:24 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:30:58 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 19:32:52 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 19:33:48 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 19:38:10 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 19:43:54 [[32MINFO[39M]: POST /api/auth/register - IP: ::1
+2025-09-24 19:44:12 [[32MINFO[39M]: POST /api/auth/register - IP: ::1
+2025-09-24 19:44:47 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 19:45:02 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 19:45:26 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 19:45:38 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 19:45:58 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 19:46:03 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 19:46:08 [[32MINFO[39M]: POST /api/instructor/make-instructor/68d3fcb5bfdf752d0634b661 - IP: ::1
+2025-09-24 19:46:15 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 19:46:17 [[32MINFO[39M]: POST /api/instructor/remove-instructor/68d3fcb5bfdf752d0634b661 - IP: ::1
+2025-09-24 19:46:20 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
