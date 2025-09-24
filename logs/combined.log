@@ -4747,3 +4747,176 @@
 2025-09-22 17:16:22 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
 2025-09-22 18:54:08 [[32MINFO[39M]: ✅ Cloudinary configured successfully
 2025-09-22 18:54:09 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-23 16:52:11 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-23 16:52:12 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-24 13:27:02 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-24 13:27:09 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-24 13:27:16 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 13:27:22 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:27:25 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 13:27:29 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 13:27:31 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 13:30:36 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 13:30:52 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 13:31:08 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:31:12 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:31:52 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:31:55 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:33:10 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 13:33:41 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-24 13:34:02 [[32MINFO[39M]: Lesson created: 68d3a5f294696de373c745d8 - Java Environmen Setup
+2025-09-24 13:34:10 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:34:12 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 13:34:27 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 13:35:20 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-24 13:35:45 [[32MINFO[39M]: Lesson created: 68d3a65994696de373c745e2 - Java Syntax Basics
+2025-09-24 13:36:01 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 13:36:25 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:36:27 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:43:25 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:43:41 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:46:24 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:46:37 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:46:38 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:48:02 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:51:23 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:52:24 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:52:52 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:52:53 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:55:02 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:55:49 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 13:58:46 [[32MINFO[39M]: GET /api/courses/get-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 13:59:14 [[32MINFO[39M]: GET /api/enrollment/get-cancel-requests - IP: ::1
+2025-09-24 13:59:16 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 13:59:31 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 14:02:46 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:02:52 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:02:59 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:07:55 [[32MINFO[39M]: POST /api/courses/create-course - IP: ::1
+2025-09-24 14:07:55 [[31MERROR[39M]: Error: Only mp4, mov, mkv videos, pdf files, and images (jpg, jpeg, png) are allowed
+    at fileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\config\multer.js:21:7)
+    at wrappedFileFilter (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\multer\lib\make-middleware.js:132:7)
+    at Multipart.emit (node:events:518:28)
+    at HeaderParser.cb (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+2025-09-24 14:09:24 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-24 14:09:25 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-24 14:10:52 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 14:11:48 [[32MINFO[39M]: POST /api/auth/register - IP: ::1
+2025-09-24 14:12:10 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 14:12:17 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 14:12:36 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 14:12:38 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:12:41 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 14:12:43 [[32MINFO[39M]: POST /api/instructor/make-instructor/68d3aecc139499f8a592a96b - IP: ::1
+2025-09-24 14:12:49 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:12:51 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:13:34 [[32MINFO[39M]: POST /api/courses/create-course - IP: ::1
+2025-09-24 14:13:41 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:14:50 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:14:51 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:15:07 [[32MINFO[39M]: DELETE /api/courses/delete-course/68d0f82a278e516a8619cdb5 - IP: ::1
+2025-09-24 14:15:12 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 14:15:28 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:15:31 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:15:55 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 14:16:26 [[32MINFO[39M]: POST /api/auth/register - IP: ::1
+2025-09-24 14:16:45 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 14:16:52 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-24 14:17:07 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 14:17:10 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 14:17:16 [[32MINFO[39M]: POST /api/instructor/make-instructor/68d3afe2139499f8a592a994 - IP: ::1
+2025-09-24 14:17:22 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:17:27 [[32MINFO[39M]: POST /api/instructor/remove-instructor/68d0f27befbc718665c9587b - IP: ::1
+2025-09-24 14:17:30 [[32MINFO[39M]: POST /api/instructor/remove-instructor/68d1461870d3191990c5c4b5 - IP: ::1
+2025-09-24 14:17:36 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:17:48 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 14:17:53 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:18:27 [[32MINFO[39M]: POST /api/courses/create-course - IP: ::1
+2025-09-24 14:18:30 [[31MERROR[39M]: MongoServerError: E11000 duplicate key error collection: LMS.courses index: slug_1 dup key: { slug: "java domination" }
+    at InsertOneOperation.execute (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (C:\Users\ASUS\OneDrive\Desktop\LMS\backend\node_modules\mongodb\lib\collection.js:157:16)
+2025-09-24 14:19:19 [[32MINFO[39M]: POST /api/courses/create-course - IP: ::1
+2025-09-24 14:19:23 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:19:48 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 14:19:49 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 14:19:53 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 14:21:22 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-24 14:21:23 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-24 14:22:05 [[32MINFO[39M]: POST /api/courses/create-course - IP: ::1
+2025-09-24 14:22:19 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:51:57 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:54:06 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 15:54:41 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:54:48 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 15:54:51 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:54:56 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:56:15 [[32MINFO[39M]: POST /api/module/create-module - IP: ::1
+2025-09-24 15:56:19 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 15:56:31 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:56:31 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 15:56:35 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 15:56:54 [[32MINFO[39M]: GET /api/enrollment/get-cancel-requests - IP: ::1
+2025-09-24 15:57:01 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 15:57:05 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 15:57:08 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 15:58:34 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-24 15:58:51 [[32MINFO[39M]: Lesson created: 68d3c7e3ff12dec063630ac0 - Introduction of Node
+2025-09-24 15:59:19 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 15:59:31 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 15:59:34 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 16:00:22 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 16:01:19 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 16:02:14 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-24 16:02:32 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 16:02:41 [[32MINFO[39M]: Lesson created: 68d3c8c9ff12dec063630ad0 - Node js Setup
+2025-09-24 16:02:46 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 16:02:47 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 16:02:58 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:03:01 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 16:03:40 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
+2025-09-24 16:04:10 [[32MINFO[39M]: POST /api/lesson/create - IP: ::1
+2025-09-24 16:04:36 [[32MINFO[39M]: Lesson created: 68d3c93cff12dec063630ade - Node js fundamentals
+2025-09-24 16:04:43 [[32MINFO[39M]: GET /api/lesson/all - IP: ::1
+2025-09-24 16:04:56 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:05:00 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 16:05:27 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 16:05:28 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 16:05:30 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 16:05:31 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 16:05:34 [[32MINFO[39M]: GET /api/certificate/get-all-certificates - IP: ::1
+2025-09-24 16:05:36 [[32MINFO[39M]: GET /api/enrollment/get-cancel-requests - IP: ::1
+2025-09-24 16:05:40 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 16:07:43 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-24 16:07:44 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:07:44 [[32MINFO[39M]: GET /api/auth/profile - IP: ::1
+2025-09-24 16:07:44 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:08:00 [[32MINFO[39M]: GET /api/courses/get-course/68d3b138ff12dec063630a9d - IP: ::1
+2025-09-24 16:08:03 [[32MINFO[39M]: GET /api/auth/profile - IP: ::1
+2025-09-24 16:08:03 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:08:03 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:08:17 [[32MINFO[39M]: POST /api/payments/create - IP: ::1
+2025-09-24 16:08:43 [[32MINFO[39M]: PUT /api/payments/verify/pay_RLPOQCjgxnWVeR - IP: ::1
+2025-09-24 16:08:43 [[32MINFO[39M]: POST /api/enrollment/enroll - IP: ::1
+2025-09-24 16:08:51 [[32MINFO[39M]: GET /api/auth/profile - IP: ::1
+2025-09-24 16:08:51 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:08:51 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:08:58 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 16:09:17 [[32MINFO[39M]: PUT /api/enrollment/request-cancel/68d3ca33ff12dec063630b10 - IP: ::1
+2025-09-24 16:09:30 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 16:09:36 [[32MINFO[39M]: GET /api/enrollment/get-cancel-requests - IP: ::1
+2025-09-24 16:10:02 [[32MINFO[39M]: GET /api/instructor/all-instructors - IP: ::1
+2025-09-24 16:10:04 [[32MINFO[39M]: GET /api/auth/all-users - IP: ::1
+2025-09-24 16:10:25 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:10:31 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-24 16:10:57 [[32MINFO[39M]: GET /api/auth/profile - IP: ::1
+2025-09-24 16:10:57 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-24 16:10:57 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
