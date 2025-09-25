@@ -89,18 +89,24 @@ exports.updateModule = async (req, res, next) => {
   try {
     const moduleId = req.params.id;
     const { course: newCourseId, title, order } = req.body;
+
+    // Validate moduleId
     const oldModule = await moduleModel.findById(moduleId);
     if (!oldModule) return ResponseHandler.notFound(res, "Module not found");
 
     const oldCourseId = oldModule.course.toString();
 
-    const updatedModule = await moduleModel.findByIdAndUpdate(
-      moduleId,
-      { title, order, course: newCourseId },
-      { new: true }
-    );
+    // Prepare update data
+    const updateData = { title, order };
+    if (newCourseId && newCourseId.trim() !== "") {
+      updateData.course = newCourseId;
+    }
 
-    if (oldCourseId !== newCourseId) {
+    // Update module
+    const updatedModule = await moduleModel.findByIdAndUpdate(moduleId, updateData, { new: true });
+
+    // Update course modules array only if course changed
+    if (newCourseId && oldCourseId !== newCourseId) {
       await courseModel.findByIdAndUpdate(oldCourseId, { $pull: { modules: moduleId } });
       await courseModel.findByIdAndUpdate(newCourseId, { $addToSet: { modules: moduleId } });
     }
@@ -110,6 +116,7 @@ exports.updateModule = async (req, res, next) => {
     next(err);
   }
 };
+
 
 // ================= DELETE MODULE =================
 exports.deleteModule = async (req, res, next) => {

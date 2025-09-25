@@ -3,7 +3,10 @@ const crypto = require("crypto");
 const { sendEmail } = require("../config/nodemailer");
 const userModel = require("../models/user.model");
 const ResponseHandler = require("../utils/responseHandler");
-const { generateAccessToken, generateRefreshToken } = require("../utils/tokens");
+const {
+  generateAccessToken,
+  generateRefreshToken,
+} = require("../utils/tokens");
 const { forgotPasswordTemplate } = require("../utils/emailTemplate");
 const { default: mongoose } = require("mongoose");
 
@@ -17,7 +20,7 @@ exports.register = async (req, res, next) => {
       return ResponseHandler.badRequest(res, "User already exists");
     }
 
-    const user = await userModel.create({ name, email, password});
+    const user = await userModel.create({ name, email, password });
 
     return ResponseHandler.created(res, "User registered successfully", {
       user: {
@@ -68,7 +71,7 @@ exports.login = async (req, res, next) => {
         email: user.email,
         role: user.role,
       },
-      accessToken, 
+      accessToken,
     });
   } catch (err) {
     console.log(err);
@@ -76,14 +79,12 @@ exports.login = async (req, res, next) => {
   }
 };
 
-
 exports.editProfile = async (req, res, next) => {
   try {
     const { name, email } = req.body;
     // console.log(req.body);
     const userId = req.user.id;
     // console.log(userId);
-
 
     const user = await userModel.findByIdAndUpdate(
       userId,
@@ -141,7 +142,7 @@ exports.forgotPassword = async (req, res, next) => {
 
     const resetToken = crypto.randomBytes(32).toString("hex");
     user.resetPasswordToken = resetToken;
-    user.resetPasswordExpires = Date.now() + 3600000; 
+    user.resetPasswordExpires = Date.now() + 3600000;
     await user.save();
 
     const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
@@ -157,8 +158,8 @@ exports.forgotPassword = async (req, res, next) => {
 
 exports.resetPassword = async (req, res, next) => {
   try {
-    const {  newPassword } = req.body;
-    const { token } = req.params; 
+    const { newPassword } = req.body;
+    const { token } = req.params;
 
     // console.log(req.body);
     const user = await userModel.findOne({
@@ -180,7 +181,6 @@ exports.resetPassword = async (req, res, next) => {
     next(err);
   }
 };
-
 
 exports.getProfile = async (req, res, next) => {
   try {
@@ -247,7 +247,11 @@ exports.getProfile = async (req, res, next) => {
       return ResponseHandler.notFound(res, "User not found");
     }
 
-    return ResponseHandler.success(res, "User profile retrieved", userWithEnrollments[0]);
+    return ResponseHandler.success(
+      res,
+      "User profile retrieved",
+      userWithEnrollments[0]
+    );
   } catch (err) {
     next(err);
   }
@@ -256,38 +260,80 @@ exports.getProfile = async (req, res, next) => {
 module.exports.getAllUsers = async (req, res, next) => {
   try {
     const allUsers = await userModel.aggregate([
-      // Only fetch students
       { $match: { role: "student" } },
-      
-      // Exclude sensitive fields
-      { $project: { password: 0, refreshToken: 0, resetPasswordToken: 0 } },
 
-      // Lookup enrolled courses details
+      // Lookup enrollments
       {
         $lookup: {
-          from: "courses", // collection name in MongoDB
-          localField: "enrolledCourses", // field in user
-          foreignField: "_id", // field in courses
+          from: "enrollments",
+          localField: "_id",
+          foreignField: "student",
+          as: "enrollments",
+        },
+      },
+
+      // Lookup courses from enrollments
+      {
+        $lookup: {
+          from: "courses",
+          localField: "enrollments.course",
+          foreignField: "_id",
           as: "enrolledCoursesDetails",
         },
       },
 
-      // Optionally: select only relevant course fields
+      // Lookup instructors for each course
+      {
+        $lookup: {
+          from: "users",
+          localField: "enrolledCoursesDetails.instructor",
+          foreignField: "_id",
+          as: "instructorsDetails",
+        },
+      },
+
+      // Map course + instructor
       {
         $project: {
           name: 1,
           email: 1,
           role: 1,
-          enrolledCoursesDetails: { title: 1, _id: 1 },
+          enrolledCoursesDetails: {
+            $map: {
+              input: "$enrolledCoursesDetails",
+              as: "course",
+              in: {
+                _id: "$$course._id",
+                title: "$$course.title",
+                instructor: {
+                  $arrayElemAt: [
+                    {
+                      $filter: {
+                        input: "$instructorsDetails",
+                        cond: { $eq: ["$$this._id", "$$course.instructor"] },
+                      },
+                    },
+                    0,
+                  ],
+                },
+              },
+            },
+          },
         },
       },
     ]);
+
+    // console.log(allUsers);
 
     if (!allUsers || allUsers.length === 0) {
       return ResponseHandler.notFound(res, "No students found, empty DB");
     }
 
-    return ResponseHandler.success(res, "All students fetched successfully!", allUsers);
+    return ResponseHandler.success(
+      res,
+      "All students fetched successfully!",
+      allUsers
+    );
   } catch (err) {
     console.error(err);
     return ResponseHandler.error(res, "Failed to fetch users");
