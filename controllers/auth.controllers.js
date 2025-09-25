@@ -140,12 +140,19 @@ exports.forgotPassword = async (req, res, next) => {
       return ResponseHandler.notFound(res, "User not found");
     }
 
+    // Reset token generate karna
     const resetToken = crypto.randomBytes(32).toString("hex");
     user.resetPasswordToken = resetToken;
-    user.resetPasswordExpires = Date.now() + 3600000;
+    user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
+    // Role ke hisaab se frontend URL
+    let frontendUrl = process.env.FRONTEND_STUDENT_URL; // default student
+    if (user.role === "admin") {
+      frontendUrl = process.env.ADMIN_FRONTEND_URL;
+    }
+
+    const resetLink = `${frontendUrl}/reset-password/${resetToken}`;
     const emailTemplate = forgotPasswordTemplate(user.name, resetLink);
 
     await sendEmail(user.email, "Reset Your Password", emailTemplate);
@@ -155,6 +162,7 @@ exports.forgotPassword = async (req, res, next) => {
     next(err);
   }
 };
+
 
 exports.resetPassword = async (req, res, next) => {
   try {

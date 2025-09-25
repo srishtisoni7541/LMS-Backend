@@ -5467,3 +5467,24 @@
 2025-09-25 17:08:40 [[32MINFO[39M]: GET /api/module/all-modules - IP: ::1
 2025-09-25 17:08:45 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
 2025-09-25 17:08:47 [[32MINFO[39M]: GET /api/courses/get-course/68d3af39139499f8a592a980 - IP: ::1
+2025-09-25 17:26:07 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-25 17:26:08 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-25 17:28:46 [[32MINFO[39M]: POST /api/auth/login - IP: ::1
+2025-09-25 17:28:46 [[32MINFO[39M]: GET /api/auth/profile - IP: ::1
+2025-09-25 17:28:46 [[32MINFO[39M]: GET /api/courses/get-all-courses - IP: ::1
+2025-09-25 17:32:22 [[32MINFO[39M]: POST /api/auth/logout - IP: ::1
+2025-09-25 17:37:45 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-25 17:38:22 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-25 17:40:37 [[32MINFO[39M]: POST /api/auth/reset-password/3df8d7bbbe51fc0c7a920ad84dac3224b3a8489d8236c9eae215da3f5ba38f89 - IP: ::1
+2025-09-25 17:42:57 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-25 17:42:58 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-25 17:43:09 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-25 17:43:10 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-25 17:43:26 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-25 17:43:27 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-25 17:44:08 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-25 17:44:08 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-25 17:44:21 [[32MINFO[39M]: ✅ Cloudinary configured successfully
+2025-09-25 17:44:22 [[32MINFO[39M]: ✅ Server is running on port 3000
+2025-09-25 17:44:43 [[32MINFO[39M]: POST /api/auth/forgot-password - IP: ::1
+2025-09-25 17:46:34 [[32MINFO[39M]: POST /api/auth/reset-password/e880a92955711090eb33a1ca3660ab0197c9942a82b75d7bfdbfc5b6afe40f3a - IP: ::1
